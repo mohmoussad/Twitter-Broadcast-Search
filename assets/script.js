@@ -26,7 +26,7 @@ searchBtn.addEventListener('click', (e) => {
         return;
       }
       data.forEach((link) => {
-        linksList.innerHTML += `<a href="${link}" class="list-group-item list-group-item-action">${link}</a>`;
+        linksList.innerHTML += `<a href="${link}" target="_blank" class="list-group-item list-group-item-action">${link}</a>`;
       });
     });
 });
