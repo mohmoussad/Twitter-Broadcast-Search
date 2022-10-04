@@ -15,16 +15,28 @@
     <title>Twitter Broadcasts Search</title>
   </head>
   <body>
-    <div class="container mt-3">
-      <div class="top-container">
-        <form>
-          <h1><i class="fa-brands fa-twitter"></i> Twitter Broadcasts Search</h1>
-          <h4>Search</h4>
-          <div><input type="text" class="search-input" placeholder="..." /> <button class="search-btn">Search</button></div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex flex-column justify-content-center align-items-center box">
+        <form class="">
+          <h2 class="text-center"><i class="fa-brands fa-twitter"></i> Twitter Broadcasts Search</h2>
+          <div class="d-flex flex-column">
+            <input type="text" class="search-input form-control my-2" placeholder="..." />
+            <button class="btn btn-primary search-btn m-2">Search</button>
+          </div>
         </form>
+        <br />
+        <div hidden class="spinner"></div>
+        <p class="err"></p>
+        <ul class="links-list list-group"></ul>
       </div>
-      <div class="bottom-container"></div>
     </div>
+    <footer>
+      <ul class="d-flex align-items-center justify-content-end list-unstyled d-flex">
+        <h5 class="m-2">Find me on:</h5>
+        <a class="m-2" href="https://github.com/mohmousad"><i class="fa-brands fa-github"></i></a>
+        <a class="m-2" href="https://www.linkedin.com/in/mohmousad/"><i class="fa-brands fa-linkedin"></i></a>
+      </ul>
+    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

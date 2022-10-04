@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #67c5ff;
+}
+.search-input {
+  text-align: center;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-github,
+.fa-linkedin {
+  color: black;
+  font-size: 30px;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: rgba(0, 0, 0, 0.167);
+}
+footer {
+  padding-right: 1rem;
+  position: fixed;
+  /* height: 1rem; */
+  bottom: 0;
+  width: 100%;
+}
+
+.box {
+  border: 1px #67c5ff solid;
+  padding: 70px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.spinner:not([hidden]) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner::after {
+  content: '';
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #1da1f2;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
