@@ -23,6 +23,10 @@ app.get('/search', (req, res) => {
   res.send(JSON.parse('{"msg":"No search input provided"}'));
 });
 
+app.get('/check', (req, res) => {
+  res.send(JSON.parse('{"msg":"No search input provided"}'));
+});
+
 app.get('/search/:searchInput', async (req, res) => {
   const searchInput = req.params.searchInput;
 
@@ -56,6 +60,31 @@ app.get('/search/:searchInput', async (req, res) => {
     return res.send(JSON.parse(`{"msg":"Your search didn't match any result."}`));
   }
   return res.send(brodcastsLinks);
+});
+
+app.get('/check/:link', async (req, res) => {
+  const link = req.params.link;
+
+  // Guest Token Generation
+  const tokenRes = await fetch('https://api.twitter.com/1.1/guest/activate.json', {
+    headers: {
+      Authorization: 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
+    },
+    method: 'POST',
+  });
+  const { guest_token: guestToken } = await tokenRes.json();
+
+  const vaildateLinkAPI = await fetch(`https://twitter.com/i/api/1.1/broadcasts/show.json?ids=${link}`, {
+    headers: {
+      authorization: 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
+      'x-guest-token': `${guestToken}`,
+    },
+    body: null,
+    method: 'GET',
+  });
+  const vaildationResult = await vaildateLinkAPI.json();
+  const isRunning = vaildationResult.broadcasts[link]?.state == 'RUNNING';
+  return res.send(JSON.parse(`{"running": ${isRunning}}`));
 });
 
 // Start the server
