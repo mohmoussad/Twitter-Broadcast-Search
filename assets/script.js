@@ -4,7 +4,8 @@ const linksList = document.querySelector('.links-list');
 const spinner = document.querySelector('.spinner');
 const errP = document.querySelector('.err');
 
-const serverURL = 'https://twitter-broadcast-search-server.onrender.com';
+// const serverURL = 'https://twitter-broadcast-search-server.onrender.com';
+const serverURL = 'https://nameless-mountain-61465.herokuapp.com/';
 
 searchBtn.addEventListener('click', (e) => {
   linksList.innerHTML = '';
