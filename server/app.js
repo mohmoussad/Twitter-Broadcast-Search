@@ -84,6 +84,7 @@ app.get('/check/:link', async (req, res) => {
   });
   const vaildationResult = await vaildateLinkAPI.json();
   const isRunning = vaildationResult.broadcasts[link]?.state == 'RUNNING';
+  // const isExternal = vaildationResult.broadcasts[link]?.tweet_external;
   return res.send(JSON.parse(`{"running": ${isRunning}}`));
 });
 
