@@ -5,7 +5,7 @@ const spinner = document.querySelector('.spinner');
 const errP = document.querySelector('.err');
 
 // const serverURL = 'http://localhost:3000';
-const serverURL = 'https://nameless-mountain-61465.herokuapp.com';
+const serverURL = 'https://drab-plum-panther-hat.cyclic.app';
 
 searchBtn.addEventListener('click', (e) => {
   linksList.innerHTML = '';
