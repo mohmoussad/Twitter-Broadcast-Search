@@ -1,8 +1,12 @@
+### Update: 
+Twitter restricted its search to registered users. [Link](https://9to5mac.com/2023/04/26/twitter-restricts-search-fleets-coming-back/)
+
+![](https://media.tenor.com/id5k0yLxVEEAAAAC/triste-feeling-down.gif)
 # Twitter Broadcasts Search
 
 A Twitter filtered search to only get the live broadcasts hosted on Twitter itself, Built using **Vanilla JS** and **Node.js**.
 
-- Live Version: [Here](https://mohmousad.github.io/Twitter-Broadcast-Search/)
+
 
 ### How to Run Locally:
 ```
