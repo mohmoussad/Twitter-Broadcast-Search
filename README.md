@@ -1,4 +1,4 @@
-### Update: 
+## ⚠ Update: 
 🙃 Twitter restricted its search to registered users. [Link](https://9to5mac.com/2023/04/26/twitter-restricts-search-fleets-coming-back/)
 
 # Twitter Broadcasts Search
@@ -6,7 +6,8 @@ A Twitter filtered search to only get the live broadcasts hosted on Twitter itse
 
 
 ## Demo:
-https://github.com/mohmoussad/Twitter-Broadcast-Search/assets/88286511/fa1ffab8-5de9-4cfb-add6-edf012bfc441
+https://github.com/mohmoussad/Twitter-Broadcast-Search/assets/88286511/9142ef44-6ca9-439a-81ef-839c7a07d57e
+
 
 
 
