@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link
-      href="./assets/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Twitter Broadcasts Search</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="./assets/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>Twitter Broadcasts Search</title>
   </head>
-  <body>
-    <div class="h-100 d-flex align-items-center justify-content-center">
-      <div class="d-flex flex-column justify-content-center align-items-center box">
-        <form class="">
-          <h2 class="text-center"><i class="fa-brands fa-twitter"></i> Twitter Broadcasts Search</h2>
-          <p>A Twitter filtered search to only get the live broadcasts hosted on Twitter itself.</p>
-          <div class="d-flex flex-column">
-            <input type="text" class="search-input form-control my-2" placeholder="..." />
-            <button class="btn btn-primary search-btn m-2">Search</button>
-          </div>
-        </form>
-        <br />
-        <div hidden class="spinner"></div>
-        <p class="err"></p>
-        <div class="d-flex flex-row">
-          <ul class="links-list list-group"></ul>
-          <ul class="states-list list-group"></ul>
+
+<body>
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="d-flex flex-column justify-content-center align-items-center box">
+
+      <form class="">
+        <h2 class="text-center"><i class="fa-brands fa-twitter"></i> Twitter Broadcasts Search</h2>
+        <p>A Twitter filtered search to only get the live broadcasts hosted on Twitter itself.</p>
+        <div class="d-flex flex-column">
+          <input type="text" class="search-input form-control my-2" placeholder="..." />
+          <button class="btn btn-primary search-btn m-2">Search</button>
         </div>
+      </form>
+      <br />
+      <h6>
+        ⚠ Update: 🙃 Twitter restricted its search to registered users.
+        <a href="https://9to5mac.com/2023/04/26/twitter-restricts-search-fleets-coming-back/">Link</a>
+      </h6>
+      <br />
+      <div hidden class="spinner"></div>
+      <p class="err"></p>
+      <div class="d-flex flex-row">
+        <ul class="links-list list-group"></ul>
+        <ul class="states-list list-group"></ul>
       </div>
-    </div>
-    <footer>
-      <ul class="d-flex align-items-center justify-content-start list-unstyled d-flex contacts">
-        <h5 class="m-2">Find me on:</h5>
-        <a class="m-2" href="https://github.com/mohmousad"><i class="fa-brands fa-github"></i></a>
-        <a class="m-2" href="https://www.linkedin.com/in/mohmousad/"><i class="fa-brands fa-linkedin"></i></a>
-      </ul>
-    </footer>
-  </body>
-  <script
-    src="./assets/bootstrap.bundle.min.js"
-  ></script>
-  <script src="assets/script.js"></script>
+      </div>
+      </div>
+
+      <footer>
+        <ul class="d-flex align-items-center justify-content-start list-unstyled d-flex contacts">
+          <h5 class="m-2">Find me on:</h5>
+          <a class="m-2" href="https://github.com/mohmousad"><i class="fa-brands fa-github"></i></a>
+          <a class="m-2" href="https://www.linkedin.com/in/mohmousad/"><i class="fa-brands fa-linkedin"></i></a>
+        </ul>
+      </footer>
+      </body>
+<script src="./assets/bootstrap.bundle.min.js"></script>
+<script src="assets/script.js"></script>
+
 </html>
